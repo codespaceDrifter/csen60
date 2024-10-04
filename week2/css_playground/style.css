@@ -7,10 +7,23 @@ order of precedence:
 caveat: !important will override any precedence (only use for debugging)
 */
 
+html{
+    font-family: Arial, sans-serif;
+}
 
+h2 {
+    text-align: center;
+}
+
+#body1 {
+    background-color: #FFD1DC;
+}
 
 p {
-    color: purple !important;
-    background-color: orange;
+    background-color:#d6d8d7;
+}
 
+#main_text {
+    color: rgb(36, 4, 56);
+    text-decoration: underline;
 }
