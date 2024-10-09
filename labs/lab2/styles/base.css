@@ -1,0 +1,96 @@
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, nav, header {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /** define custom properties so we can reference and change styles easily */
+  --accent-background: #54a0ff;
+  --accent-background-text: #073164;
+  --accent-text: #2e86de;
+  --gray: #eee;
+  --dark-gray: #ccc;
+  --darkest-gray: #aaa;
+  --black: #333;
+
+  color: var(--black);
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+}
+
+
+/**
+  unordered list
+*/
+
+ul.tags {
+  display: flex;
+  list-style: none;
+
+  margin-bottom: 5px;
+
+  padding-left: 5px;
+}
+
+ul.tags li {
+  border-radius: 5px;
+  background-color: var(--gray);
+  /* background color should be --gray */
+  padding: 5px;
+  margin-right: 10px;
+}
+
+ul.tags a {
+  /*color should be darkest-gray*/
+  color: var(--dark-gray);
+  overflow: hidden;
+}
+
+/**
+  navigation
+*/
+nav {
+  /* background color should be accent-background */
+  display: flex;
+  width:100%;
+  height: 5%;
+  align-items: center;
+  background-color: var(--accent-background);
+  justify-content: flex-end;
+  overflow: hidden;
+
+}
+
+nav ul {
+  /* something should go here */
+  align-items: center;
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  list-style: none;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+}
+
+nav ul a {
+  /* color should be accent-background-text */
+  color: var(--accent-background-text);
+  text-decoration: none;
+}
