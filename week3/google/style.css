@@ -8,10 +8,8 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 header{
